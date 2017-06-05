@@ -7,8 +7,8 @@ All in all, Pizza Cluster provides unique personalization settings that makes or
 ##### Further Analysis:  
 &ensp;Ordering pizza online using Pizza Cluster would certainly improve the overall experience of the customer as customer would have more time to consider different options and user-friendly interface would help the user to see the end product before finalizing it. The main features of the web application would be following:  
 
-	* User information:  
-		* Login Credentials  
+* &ensp;User information:  
+	* Login Credentials  
 	* Order history of the user and based on that the user will get future suggestions.  
 	* Reward-Points. For every purchase user will get points which he/she can redeem on the next purchase.  
 * Interactive Ordering Process:  
