@@ -21,7 +21,7 @@ Ordering pizza online using Pizza Cluster would certainly improve the overall ex
 	* User would be able to track the delivery person using Google maps.  
   
 ##### Git Lab:
-https://csil-git1.cs.surrey.sfu.ca/kla121/cmpt276.git  
+(https://csil-git1.cs.surrey.sfu.ca/kla121/cmpt276.git)  
    
 ##### Group Members:
 Liam Ling, Rishabh, Alex Wong, Arsalan Macknojia, Ugur Akin, Raghav Mittal  
