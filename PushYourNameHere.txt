@@ -1,7 +1,7 @@
 ﻿# please commit it after you put your name down here
 # command for committing:
 git add PushYourNameHere.txt (. or using this for how resposity)
-git commit -m “Liam Ling” <- please write you name when you commit
+git commit -m “Liam Ling” <- please write you name when you commit 
 git push
 
 Name:
