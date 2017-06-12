@@ -4,6 +4,9 @@ git add PushYourNameHere.txt (. is used for add the whole directory)
 git commit -m “Liam Ling” <- please write you name when you commit
 git push
 
+#command for downloading:
+git pull
+
 Name:
 Liam Ling
 Rishabh Thanki
