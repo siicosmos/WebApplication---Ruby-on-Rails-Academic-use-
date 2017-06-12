@@ -9,6 +9,9 @@ git commit -m “Liam Ling” <- please write you name when you commit
 >>>>>>> 6ab3fa491b22c380d5d7125f21af28e7234540d3
 git push
 
+#command for downloading:
+git pull
+
 Name:
 Liam Ling
 Rishabh Thanki
