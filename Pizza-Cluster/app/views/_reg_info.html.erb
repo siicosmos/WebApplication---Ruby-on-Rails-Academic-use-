@@ -1,0 +1,33 @@
+<!--
+This partial is a table that requests user to enter their personal info
+It can be used in register and ordering online without login
+-->
+
+<%= form_for @user do |f| %>
+
+    <!--error checking-->
+
+    <%= if @user.errors.any? %>
+        <div id="error_explanation">
+          <h2>
+            <%= pluralize(@user.errors.count, "error") %>
+            prohibited this article from being saved:
+          </h2>
+          <ul>
+            <% @user.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+                </ul>
+                </div>
+            <% end %>
+
+            <!--fields-->
+
+            <p>
+              <%= f.label :address_line_1 %>
+              <%= f.text_field :address_line_1 %>
+            </p>
+            <p>
+
+            </p>
+
+    <% end %>
