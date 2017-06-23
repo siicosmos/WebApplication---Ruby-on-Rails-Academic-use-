@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
-  get 'pizzacluster/index'
 
-  get 'welcome/ac1'
+  resources :logins
+	root 'pizzacluster#index'
 
-  resources :order
+	get 'menu' => 'menu#show'
 
-  root 'pizzacluster#index'
+ 	get 'order' => 'order#show'
+  
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
