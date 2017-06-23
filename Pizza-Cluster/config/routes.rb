@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   resources :logins
 	root 'pizzacluster#index'
 
+	get 'pizzacluster' => 'pizzacluster#index'
+
 	get 'menu' => 'menu#show'
 
  	get 'order' => 'order#show'
