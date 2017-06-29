@@ -13,3 +13,16 @@
  *= require_tree .
  *= require_self
  */
+ #main_wrapper{
+ 	height: 100vh;
+ 	width: 100vh;
+ 	z-index: -1;
+ }
+
+ #upper_wrapper{
+ 	width: 100%
+ }
+
+ #login_wrapper{
+ 	float: right;
+ }

@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>PizzaCluster</title>
-    <%= csrf_meta_tags %>
+<head>
+	<title>PizzaCluster</title>
+	<%= csrf_meta_tags %>
+	<%= stylesheet_link_tag "application.css" %>
+	<%= stylesheet_link_tag "https://www.w3schools.com/w3css/4/w3.css" %>
 
-    </head>
 
-  <body>
-    <%= yield %>
-  </body>
+</head>
+
+<body>
+	<div class = "w3-dark-gray" id ="main_wrapper">
+		<div id = "upper_wrapper w3-white">
+			<div id = "website_logo_wrapper">
+				<!-- image_tag "image_name"-->
+			</div>
+			<div id = "login_wrapper">
+				<%= link_to 'LOGIN/REGISTER', logins_path,  class: "w3-btn w3-red", id: "login_button" %> 
+			</div>
+		</div>
+		<div class = "w3-container w3-blue" id = "content-wrapper">
+			<%= yield %>
+		</div>
+	</div>
+</body>
 </html>
