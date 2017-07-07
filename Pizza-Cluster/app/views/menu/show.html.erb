@@ -33,7 +33,16 @@
 		</head>
 	<body>
 		<form>
-	  		<input type="text" name="search" placeholder="Search..">
+	  		<input type="text" id="search" name="search" onkeyup="searchfunction()" placeholder="Search..">
+				<ul id="restaurantlist">
+				  <li><a href="#">Dominos</a></li>
+				  <li><a href="#">Pizza Hut</a></li>
+				  <li><a href="#">Arnold's Pizza shop</a></li>
+				  <li><a href="#">Ugur's Pizzeria(Best)</a></li>
+				  <li><a href="#">Marcello Pizzeria</a></li>
+				  <li><a href="#">Francesco's Ristorante Italia</a></li>
+				  <li><a href="#">Boston Pizza</a></li>
+			</ul>
 		</form>
 		<table>
 			<tr> Restaraunts in your area</tr>
@@ -52,4 +61,25 @@
 	}
 
 </style>
+
+<script>
+function searchfunction() {
+
+    var input, filter, ul, li, a, i;
+    input = document.getElementById('search');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("restaurantlist");
+    li = ul.getElementsByTagName('li');
+
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
 </html>
