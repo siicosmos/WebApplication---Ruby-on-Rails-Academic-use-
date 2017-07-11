@@ -19,7 +19,12 @@ ActiveRecord::Schema.define(version: 20170629040728) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "retails", force: :cascade do |t|
+  create_table "shops", force: :cascade do |t|
+    t.integer "number", null: false
+    t.text "name", null: false
+    t.string "address"
+    t.string "postalcode", limit: 6
+    t.string "contact"
   end
 
 end
