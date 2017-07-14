@@ -1,0 +1,18 @@
+<h1> im login </h1>
+
+<%form_for(:sessions, url:login_path) do |l|%>
+	Username or Email: <%= l.text_field :uid %>
+	Password: <%= l.password_field :password %>
+	<%= l.submit "Login" %>
+<%end%>
+	
+
+<%= form_for :users do |f| %>
+  First name: <%= f.text_field :first_name %>
+  Last name : <%= f.text_field :last_name %>
+  Username: <%= f.text_field :username %>
+  Email: <%= f.text_field :email %>
+  Password: <%= f.password_field :password%>
+  Password Confirmation: <%= f.password_field :password_confirmation %>
+  <%= f.submit "Register" %>
+<% end %>
