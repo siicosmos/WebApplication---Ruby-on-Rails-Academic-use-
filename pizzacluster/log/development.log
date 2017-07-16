@@ -2539,3 +2539,1168 @@ Processing by SessionController#new as HTML
 Completed 200 OK in 125ms (Views: 99.4ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-07-14 06:25:23 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#show as HTML
+  Rendering main/show.html.erb within layouts/application
+  Rendered main/show.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 1400ms (Views: 1368.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-14 06:25:38 -0700
+Processing by MainController#show as HTML
+  Rendering main/show.html.erb within layouts/application
+  Rendered main/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 167ms (Views: 137.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-14 06:25:41 -0700
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (127.6ms)
+Completed 200 OK in 294ms (Views: 251.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-07-14 06:26:04 -0700
+Processing by SessionController#authenticate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"avJca9WT0v8XBdWXU/wqMSX052pKv14NunbCHC/g+nFDPmtN7+Rgn2n5H0vvJgsQ+EEGJTgfaT/XFCvjYvZv0A==", "session"=>{"uid"=>"", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "uid"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "uid"], ["LIMIT", 1]]
+Redirected to http://localhost:3000login
+Completed 302 Found in 46ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-14 06:26:36 -0700
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 132ms (Views: 111.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-14 06:58:27 -0700
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (156.2ms)
+Completed 200 OK in 300ms (Views: 274.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 127.0.0.1 at 2017-07-14 06:58:40 -0700
+  
+SyntaxError (C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/controllers/user_controller.rb:7: syntax error, unexpected =>, expecting keyword_end
+		@user.name => params[:name]
+		             ^
+C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/controllers/user_controller.rb:8: syntax error, unexpected =>, expecting keyword_end
+		@user.lastname => params[:lastname]
+		                 ^
+C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/controllers/user_controller.rb:9: syntax error, unexpected =>, expecting keyword_end
+		@user.username => params[:username]
+		                 ^
+C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/controllers/user_controller.rb:10: syntax error, unexpected =>, expecting keyword_end
+		@user.email => params[:email]
+		              ^
+C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/controllers/user_controller.rb:11: syntax error, unexpected =>, expecting keyword_end
+		@user.password => params[:password]
+		                 ^):
+  
+app/controllers/user_controller.rb:7: syntax error, unexpected =>, expecting keyword_end
+app/controllers/user_controller.rb:8: syntax error, unexpected =>, expecting keyword_end
+app/controllers/user_controller.rb:9: syntax error, unexpected =>, expecting keyword_end
+app/controllers/user_controller.rb:10: syntax error, unexpected =>, expecting keyword_end
+app/controllers/user_controller.rb:11: syntax error, unexpected =>, expecting keyword_end
+Started GET "/register" for 127.0.0.1 at 2017-07-14 06:58:42 -0700
+  
+SyntaxError (C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/controllers/user_controller.rb:7: syntax error, unexpected =>, expecting keyword_end
+		@user.name => params[:name]
+		             ^
+C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/controllers/user_controller.rb:8: syntax error, unexpected =>, expecting keyword_end
+		@user.lastname => params[:lastname]
+		                 ^
+C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/controllers/user_controller.rb:9: syntax error, unexpected =>, expecting keyword_end
+		@user.username => params[:username]
+		                 ^
+C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/controllers/user_controller.rb:10: syntax error, unexpected =>, expecting keyword_end
+		@user.email => params[:email]
+		              ^
+C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/controllers/user_controller.rb:11: syntax error, unexpected =>, expecting keyword_end
+		@user.password => params[:password]
+		                 ^):
+  
+app/controllers/user_controller.rb:7: syntax error, unexpected =>, expecting keyword_end
+app/controllers/user_controller.rb:8: syntax error, unexpected =>, expecting keyword_end
+app/controllers/user_controller.rb:9: syntax error, unexpected =>, expecting keyword_end
+app/controllers/user_controller.rb:10: syntax error, unexpected =>, expecting keyword_end
+app/controllers/user_controller.rb:11: syntax error, unexpected =>, expecting keyword_end
+Started GET "/login" for 127.0.0.1 at 2017-07-14 06:59:09 -0700
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 110ms (Views: 90.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 127.0.0.1 at 2017-07-14 06:59:11 -0700
+  
+SyntaxError (C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/controllers/user_controller.rb:7: syntax error, unexpected =>, expecting keyword_end
+		@user.name => params[:name]
+		             ^
+C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/controllers/user_controller.rb:8: syntax error, unexpected =>, expecting keyword_end
+		@user.lastname => params[:lastname]
+		                 ^
+C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/controllers/user_controller.rb:9: syntax error, unexpected =>, expecting keyword_end
+		@user.username => params[:username]
+		                 ^
+C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/controllers/user_controller.rb:10: syntax error, unexpected =>, expecting keyword_end
+		@user.email => params[:email]
+		              ^
+C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/controllers/user_controller.rb:11: syntax error, unexpected =>, expecting keyword_end
+		@user.password => params[:password]
+		                 ^):
+  
+app/controllers/user_controller.rb:7: syntax error, unexpected =>, expecting keyword_end
+app/controllers/user_controller.rb:8: syntax error, unexpected =>, expecting keyword_end
+app/controllers/user_controller.rb:9: syntax error, unexpected =>, expecting keyword_end
+app/controllers/user_controller.rb:10: syntax error, unexpected =>, expecting keyword_end
+app/controllers/user_controller.rb:11: syntax error, unexpected =>, expecting keyword_end
+Started GET "/register" for 127.0.0.1 at 2017-07-14 06:59:14 -0700
+  
+SyntaxError (C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/controllers/user_controller.rb:7: syntax error, unexpected =>, expecting keyword_end
+		@user.name => params[:name]
+		             ^
+C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/controllers/user_controller.rb:8: syntax error, unexpected =>, expecting keyword_end
+		@user.lastname => params[:lastname]
+		                 ^
+C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/controllers/user_controller.rb:9: syntax error, unexpected =>, expecting keyword_end
+		@user.username => params[:username]
+		                 ^
+C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/controllers/user_controller.rb:10: syntax error, unexpected =>, expecting keyword_end
+		@user.email => params[:email]
+		              ^
+C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/controllers/user_controller.rb:11: syntax error, unexpected =>, expecting keyword_end
+		@user.password => params[:password]
+		                 ^):
+  
+app/controllers/user_controller.rb:7: syntax error, unexpected =>, expecting keyword_end
+app/controllers/user_controller.rb:8: syntax error, unexpected =>, expecting keyword_end
+app/controllers/user_controller.rb:9: syntax error, unexpected =>, expecting keyword_end
+app/controllers/user_controller.rb:10: syntax error, unexpected =>, expecting keyword_end
+app/controllers/user_controller.rb:11: syntax error, unexpected =>, expecting keyword_end
+Started GET "/register" for 127.0.0.1 at 2017-07-14 06:59:33 -0700
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/controllers/user_controller.rb:7: syntax error, unexpected =>, expecting keyword_end
+		@user.name => params[:name]
+		             ^
+C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/controllers/user_controller.rb:8: syntax error, unexpected =>, expecting keyword_end
+		@user.lastname => params[:lastname]
+		                 ^
+C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/controllers/user_controller.rb:9: syntax error, unexpected =>, expecting keyword_end
+		@user.username => params[:username]
+		                 ^
+C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/controllers/user_controller.rb:10: syntax error, unexpected =>, expecting keyword_end
+		@user.email => params[:email]
+		              ^
+C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/controllers/user_controller.rb:11: syntax error, unexpected =>, expecting keyword_end
+		@user.password => params[:password]
+		                 ^):
+  
+app/controllers/user_controller.rb:7: syntax error, unexpected =>, expecting keyword_end
+app/controllers/user_controller.rb:8: syntax error, unexpected =>, expecting keyword_end
+app/controllers/user_controller.rb:9: syntax error, unexpected =>, expecting keyword_end
+app/controllers/user_controller.rb:10: syntax error, unexpected =>, expecting keyword_end
+app/controllers/user_controller.rb:11: syntax error, unexpected =>, expecting keyword_end
+Started GET "/register" for 127.0.0.1 at 2017-07-14 07:05:31 -0700
+Started GET "/register" for 127.0.0.1 at 2017-07-14 07:05:44 -0700
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UserController#new as HTML
+  Rendering user/new.html.erb within layouts/application
+  Rendered user/new.html.erb within layouts/application (239.6ms)
+Completed 200 OK in 416ms (Views: 346.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 127.0.0.1 at 2017-07-14 07:05:55 -0700
+Processing by UserController#new as HTML
+  Rendering user/new.html.erb within layouts/application
+  Rendered user/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 110ms (Views: 90.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-14 07:05:55 -0700
+Processing by MainController#show as HTML
+  Rendering main/show.html.erb within layouts/application
+  Rendered main/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 137ms (Views: 116.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-14 07:05:57 -0700
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 136ms (Views: 115.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 127.0.0.1 at 2017-07-14 07:05:59 -0700
+Processing by UserController#new as HTML
+  Rendering user/new.html.erb within layouts/application
+  Rendered user/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 127ms (Views: 107.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/register" for 127.0.0.1 at 2017-07-14 07:06:02 -0700
+Processing by UserController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QSrOvPCFknXAOG2fm8k/7EASdO8+Aesmc1HJaj8aSqNKnf5Pdy/x1sONohGwm8kcI6MT3Gbe0hqYN19xEWlj/w==", "users"=>{"name"=>"", "lastname"=>"", "username"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 43ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-14 07:06:02 -0700
+Processing by MainController#show as HTML
+  Rendering main/show.html.erb within layouts/application
+  Rendered main/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 115ms (Views: 95.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-14 07:09:31 -0700
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 116ms (Views: 95.4ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-07-14 07:09:33 -0700
+Processing by SessionController#authenticate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LdMPM7pQnSfEOO/+74eWOOBK5o3SDwy76XLGO/9KMikEHzgVgCcvR7rEJSJTXbcZPf8HwqCvO4mEEC/EslyniA==", "session"=>{"uid"=>"sad", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "uid"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "uid"], ["LIMIT", 1]]
+Redirected to http://localhost:3000login
+Completed 302 Found in 11ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-14 07:13:02 -0700
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 123ms (Views: 102.3ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-07-14 07:13:04 -0700
+Processing by SessionController#authenticate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Nuf2JinkfsB4w7OsvcE0hECFbHMNsk1RNhmZumaxRQ5hxTao7Wisn37ZpBd4M47A/OthTe0FGH9yCbHgR1yCkw==", "session"=>{"uid"=>"", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "uid"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "uid"], ["LIMIT", 1]]
+Redirected to http://localhost:3000login
+Completed 302 Found in 9ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-14 07:14:02 -0700
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 84ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/views/session/new.html.erb:13: syntax error, unexpected ':', expecting keyword_end
+...rm_for :session, url: 'login' :via => 'GET', :html => {:clas...
+...                               ^
+C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/views/session/new.html.erb:13: syntax error, unexpected ',', expecting keyword_end
+...on, url: 'login' :via => 'GET', :html => {:class => 'w3-cont...
+...                               ^
+C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/views/session/new.html.erb:13: syntax error, unexpected keyword_do_block, expecting keyword_end
+...> {:class => 'w3-container'} do |f| @output_buffer.safe_appe...
+...                               ^
+C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/views/session/new.html.erb:25: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/session/new.html.erb:13: syntax error, unexpected ':', expecting keyword_end
+app/views/session/new.html.erb:13: syntax error, unexpected ',', expecting keyword_end
+app/views/session/new.html.erb:13: syntax error, unexpected keyword_do_block, expecting keyword_end
+app/views/session/new.html.erb:25: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/login" for 127.0.0.1 at 2017-07-14 07:16:25 -0700
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 80ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/views/session/new.html.erb:13: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+..._for :session, url: 'login' via: => 'GET', :html => {:class ...
+...                               ^
+C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/views/session/new.html.erb:13: syntax error, unexpected ',', expecting keyword_end
+...on, url: 'login' via: => 'GET', :html => {:class => 'w3-cont...
+...                               ^
+C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/views/session/new.html.erb:13: syntax error, unexpected keyword_do_block, expecting keyword_end
+...> {:class => 'w3-container'} do |f| @output_buffer.safe_appe...
+...                               ^
+C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/views/session/new.html.erb:25: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/session/new.html.erb:13: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/views/session/new.html.erb:13: syntax error, unexpected ',', expecting keyword_end
+app/views/session/new.html.erb:13: syntax error, unexpected keyword_do_block, expecting keyword_end
+app/views/session/new.html.erb:25: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/login" for 127.0.0.1 at 2017-07-14 07:16:42 -0700
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 82ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/views/session/new.html.erb:13: syntax error, unexpected =>
+...:session, url: 'login', via: => 'GET', :html => {:class => '...
+...                               ^
+C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/views/session/new.html.erb:13: syntax error, unexpected ',', expecting keyword_end
+...n, url: 'login', via: => 'GET', :html => {:class => 'w3-cont...
+...                               ^
+C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/views/session/new.html.erb:13: syntax error, unexpected keyword_do_block, expecting keyword_end
+...> {:class => 'w3-container'} do |f| @output_buffer.safe_appe...
+...                               ^
+C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/views/session/new.html.erb:25: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/session/new.html.erb:13: syntax error, unexpected =>
+app/views/session/new.html.erb:13: syntax error, unexpected ',', expecting keyword_end
+app/views/session/new.html.erb:13: syntax error, unexpected keyword_do_block, expecting keyword_end
+app/views/session/new.html.erb:25: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/login" for 127.0.0.1 at 2017-07-14 07:17:00 -0700
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 117ms (Views: 96.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-07-14 07:17:02 -0700
+Processing by SessionController#authenticate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ef96ZlTi2cWXQqnRLOVcKN+M8xZdDPrOl6xO9x9hcHVG3brokG4LmpFYvmrpF+ZsY+L+KL27r+DTvGatPoy36A==", "session"=>{"uid"=>"", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "uid"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "uid"], ["LIMIT", 1]]
+Redirected to http://localhost:3000login
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-14 07:18:34 -0700
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 123ms (Views: 99.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 127.0.0.1 at 2017-07-14 07:18:35 -0700
+Processing by UserController#new as HTML
+  Rendering user/new.html.erb within layouts/application
+  Rendered user/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 118ms (Views: 98.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 127.0.0.1 at 2017-07-14 07:19:15 -0700
+Processing by UserController#new as HTML
+  Rendering user/new.html.erb within layouts/application
+  Rendered user/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 122ms (Views: 102.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-14 07:19:16 -0700
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 110ms (Views: 90.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-14 07:21:19 -0700
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 118ms (Views: 97.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-14 07:21:22 -0700
+  
+ActionController::RoutingError (undefined method `before_filter' for SessionController:Class):
+  
+app/controllers/session_controller.rb:2:in `<class:SessionController>'
+app/controllers/session_controller.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2017-07-15 23:36:20 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#show as HTML
+  Rendering main/show.html.erb within layouts/application
+  Rendered main/show.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 1113ms (Views: 1084.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-15 23:36:40 -0700
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (75.0ms)
+Completed 200 OK in 205ms (Views: 184.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 127.0.0.1 at 2017-07-15 23:36:45 -0700
+Processing by UserController#new as HTML
+  Rendering user/new.html.erb within layouts/application
+  Rendered user/new.html.erb within layouts/application (110.6ms)
+Completed 500 Internal Server Error in 217ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `users_path' for #<#<Class:0x0000000d420150>:0x0000000d40e568>):
+     9: 	<div class = 'w3-container w3-red'>
+    10: 		<h2> REGISTER </h2>
+    11: 	</div>
+    12: 	<%= form_for @user, :html => {:class => 'w3-container'} do |f| %>
+    13: 	<%= f.label "First name:" %>
+    14: 	 <%= f.text_field :name, :class => 'w3-input w3-border w3-round' %>
+    15: 	<%= f.label "Last name:" %>
+  
+app/views/user/new.html.erb:12:in `_app_views_user_new_html_erb___1278979106_111215900'
+Started GET "/register" for 127.0.0.1 at 2017-07-15 23:58:25 -0700
+  
+SyntaxError (C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/controllers/user_controller.rb:8: syntax error, unexpected '=', expecting keyword_end
+		=begin
+		 ^
+C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/controllers/user_controller.rb:14: syntax error, unexpected '=', expecting keyword_end
+		=end
+		 ^
+C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/controllers/user_controller.rb:30: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/user_controller.rb:8: syntax error, unexpected '=', expecting keyword_end
+app/controllers/user_controller.rb:14: syntax error, unexpected '=', expecting keyword_end
+app/controllers/user_controller.rb:30: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/" for 127.0.0.1 at 2017-07-15 23:58:30 -0700
+Processing by MainController#show as HTML
+  Rendering main/show.html.erb within layouts/application
+  Rendered main/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 139ms (Views: 118.8ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-15 23:58:32 -0700
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 141ms (Views: 122.4ms)
+
+
+Started GET "/register" for 127.0.0.1 at 2017-07-15 23:58:32 -0700
+  
+SyntaxError (C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/controllers/user_controller.rb:8: syntax error, unexpected '=', expecting keyword_end
+		=begin
+		 ^
+C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/controllers/user_controller.rb:14: syntax error, unexpected '=', expecting keyword_end
+		=end
+		 ^
+C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/controllers/user_controller.rb:30: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/user_controller.rb:8: syntax error, unexpected '=', expecting keyword_end
+app/controllers/user_controller.rb:14: syntax error, unexpected '=', expecting keyword_end
+app/controllers/user_controller.rb:30: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/register" for 127.0.0.1 at 2017-07-16 00:00:19 -0700
+  
+ActionController::RoutingError (undefined method `resources' for UserController:Class):
+  
+app/controllers/user_controller.rb:2:in `<class:UserController>'
+app/controllers/user_controller.rb:1:in `<top (required)>'
+Started GET "/register" for 127.0.0.1 at 2017-07-16 00:00:54 -0700
+Processing by UserController#new as HTML
+  Rendering user/new.html.erb within layouts/application
+  Rendered user/new.html.erb within layouts/application (141.1ms)
+Completed 200 OK in 253ms (Views: 233.1ms)
+
+
+Started POST "/register" for 127.0.0.1 at 2017-07-16 00:01:16 -0700
+Processing by UserController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"E+rJP58sic1xW+gpMj7JBMbNBScNkeoVuzA3vWWdkEkkU/aoeWYzBkvr15ow4b1g3Ilw6pVk35jC9+5zxlvXBQ==", "user"=>{"name"=>"sdfg", "lastname"=>"serwsf", "username"=>"sadasd", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 1.5ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/user_controller.rb:6:in `create'
+Started POST "/register" for 127.0.0.1 at 2017-07-16 00:11:42 -0700
+  
+SyntaxError (C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/controllers/user_controller.rb:36: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/user_controller.rb:36: syntax error, unexpected end-of-input, expecting keyword_end
+Started POST "/register" for 127.0.0.1 at 2017-07-16 00:12:53 -0700
+Processing by UserController#create as HTML
+Started GET "/" for 127.0.0.1 at 2017-07-16 00:12:53 -0700
+Started POST "/register" for 127.0.0.1 at 2017-07-16 00:12:53 -0700
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"E+rJP58sic1xW+gpMj7JBMbNBScNkeoVuzA3vWWdkEkkU/aoeWYzBkvr15ow4b1g3Ilw6pVk35jC9+5zxlvXBQ==", "user"=>{"name"=>"sdfg", "lastname"=>"serwsf", "username"=>"sadasd", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/user_controller.rb:6:in `create'
+Processing by UserController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"E+rJP58sic1xW+gpMj7JBMbNBScNkeoVuzA3vWWdkEkkU/aoeWYzBkvr15ow4b1g3Ilw6pVk35jC9+5zxlvXBQ==", "user"=>{"name"=>"sdfg", "lastname"=>"serwsf", "username"=>"sadasd", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Processing by MainController#show as HTML
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.5ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/user_controller.rb:6:in `create'
+  Rendering main/show.html.erb within layouts/application
+  Rendered main/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 158ms (Views: 136.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/register" for 127.0.0.1 at 2017-07-16 00:14:29 -0700
+Processing by UserController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"E+rJP58sic1xW+gpMj7JBMbNBScNkeoVuzA3vWWdkEkkU/aoeWYzBkvr15ow4b1g3Ilw6pVk35jC9+5zxlvXBQ==", "user"=>{"name"=>"sdfg", "lastname"=>"serwsf", "username"=>"sadasd", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (9.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 65ms (ActiveRecord: 11.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-16 00:14:29 -0700
+Processing by MainController#show as HTML
+  Rendering main/show.html.erb within layouts/application
+  Rendered main/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 112ms (Views: 91.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-16 00:14:31 -0700
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 122ms (Views: 103.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-16 00:14:50 -0700
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 136ms (Views: 113.9ms)
+
+
+Started GET "/register" for 127.0.0.1 at 2017-07-16 00:14:59 -0700
+Processing by UserController#new as HTML
+  Rendering user/new.html.erb within layouts/application
+  Rendered user/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 116ms (Views: 96.0ms)
+
+
+Started POST "/register" for 127.0.0.1 at 2017-07-16 00:15:02 -0700
+Processing by UserController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0AgDMaZhUerTjszgXE3ros5i/X52JO1MDnLpJA3xlftVZHOdiSi1xYWTBVarT0+cd1eKPGxEdtRW3N9jH7Hmgg==", "user"=>{"name"=>"asd", "lastname"=>"asdwqeae", "username"=>"adqw", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/login
+Completed 302 Found in 20ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-16 00:15:02 -0700
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 115ms (Views: 90.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-16 00:17:49 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (167.6ms)
+Completed 200 OK in 305ms (Views: 280.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-16 00:18:03 -0700
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 118ms (Views: 99.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 127.0.0.1 at 2017-07-16 00:18:05 -0700
+Processing by UserController#new as HTML
+  Rendering user/new.html.erb within layouts/application
+  Rendered user/new.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 147ms (Views: 127.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/register" for 127.0.0.1 at 2017-07-16 00:18:11 -0700
+Processing by UserController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UIkFgWbyLK3Zb9q59iMGKm2+3+TOJuglVu6HQ7Ph7AnV5XUtSbvIgo9yEw8BIaIU1IuoptRGc70OQLEEoaGfcA==", "user"=>{"name"=>"erwfcsdf", "lastname"=>"dsas", "username"=>"dasda", "email"=>"fsdad", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "fsdad"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 21ms (ActiveRecord: 1.5ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Password confirmation doesn't match Password, Email Invalid Email!):
+  
+app/controllers/user_controller.rb:17:in `create'
+Started GET "/register" for 127.0.0.1 at 2017-07-16 00:18:37 -0700
+Processing by UserController#new as HTML
+  Rendering user/new.html.erb within layouts/application
+  Rendered user/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 174ms (Views: 153.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/register" for 127.0.0.1 at 2017-07-16 00:18:54 -0700
+Processing by UserController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EIz/CiOnwTyX3jM1/cxJhqw58o6Lf9821cjRKlKPh1cnNcCdxe17961uDIb/Ez3itn2HQxOK6rusDwjk8UnAGw==", "user"=>{"name"=>"ugur", "lastname"=>"akin", "username"=>"uguer", "email"=>"ugurakin21@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ugurakin21@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (53.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "lastname", "username", "email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "ugur"], ["lastname", "akin"], ["username", "uguer"], ["email", "ugurakin21@gmail.com"], ["password", "xxryuxx"], ["created_at", "2017-07-16 07:18:54.656631"], ["updated_at", "2017-07-16 07:18:54.656631"]]
+  [1m[35m (89.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 150ms (ActiveRecord: 142.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-16 00:18:54 -0700
+Processing by MainController#show as HTML
+  Rendering main/show.html.erb within layouts/application
+  Rendered main/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 116ms (Views: 96.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-16 00:51:53 -0700
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 152ms (Views: 129.9ms)
+
+
+Started GET "/register" for 127.0.0.1 at 2017-07-16 00:52:10 -0700
+Processing by UserController#new as HTML
+  Rendering user/new.html.erb within layouts/application
+  Rendered user/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 136ms (Views: 114.7ms)
+
+
+Started POST "/register" for 127.0.0.1 at 2017-07-16 00:52:32 -0700
+Processing by UserController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T/RJqzbSE/gbPqWHcM9staEfpO+N+yy/Zltcq9CvVHzKmDkHGZv3100jbDGHzciLGCrTrZebtyc+9Wrswu8nBQ==", "user"=>{"name"=>"uguaer", "lastname"=>"akis", "username"=>"asda", "email"=>"uakin@sfu.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Completed 500 Internal Server Error in 9ms
+
+
+  
+LoadError (cannot load such file -- bcrypt):
+  
+app/models/user.rb:8:in `<class:User>'
+app/models/user.rb:1:in `<top (required)>'
+app/controllers/user_controller.rb:6:in `create'
+Started POST "/register" for 127.0.0.1 at 2017-07-16 00:54:04 -0700
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UserController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T/RJqzbSE/gbPqWHcM9staEfpO+N+yy/Zltcq9CvVHzKmDkHGZv3100jbDGHzciLGCrTrZebtyc+9Wrswu8nBQ==", "user"=>{"name"=>"uguaer", "lastname"=>"akis", "username"=>"asda", "email"=>"uakin@sfu.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Completed 500 Internal Server Error in 9888ms (ActiveRecord: 1.0ms)
+
+
+  
+NoMethodError (undefined method `password_digest=' for #<User:0x00000007fca740>):
+  
+app/controllers/user_controller.rb:6:in `create'
+Started POST "/register" for 127.0.0.1 at 2017-07-16 01:05:56 -0700
+Processing by UserController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T/RJqzbSE/gbPqWHcM9staEfpO+N+yy/Zltcq9CvVHzKmDkHGZv3100jbDGHzciLGCrTrZebtyc+9Wrswu8nBQ==", "user"=>{"name"=>"uguaer", "lastname"=>"akis", "username"=>"asda", "email"=>"uakin@sfu.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Completed 500 Internal Server Error in 73ms (ActiveRecord: 1.5ms)
+
+
+  
+NoMethodError (undefined method `password_digest=' for #<User:0x0000000530fef8>):
+  
+app/controllers/user_controller.rb:6:in `create'
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_sessions_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_sessions_on_user_id' AND type='index'
+[0m
+Started GET "/register" for 127.0.0.1 at 2017-07-16 01:07:02 -0700
+Processing by UserController#new as HTML
+  Rendering user/new.html.erb within layouts/application
+  Rendered user/new.html.erb within layouts/application (162.1ms)
+Completed 200 OK in 305ms (Views: 285.7ms)
+
+
+Started POST "/register" for 127.0.0.1 at 2017-07-16 01:07:27 -0700
+Processing by UserController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pf1SgA4GkBMok7EqEvUAh8myZqaRTwHhJJX/cNGZZ9OSRG0X6Ewq2BIjjpkQKnTj0/YTawm6NGxdUia+cl8gnw==", "user"=>{"name"=>"ugur", "lastname"=>"kaiun", "username"=>"sadik", "email"=>"uakin@sfu.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Completed 500 Internal Server Error in 68ms (ActiveRecord: 1.0ms)
+
+
+  
+NoMethodError (undefined method `password_digest=' for #<User:0x0000000d8799e0>):
+  
+app/controllers/user_controller.rb:6:in `create'
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_sessions_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_sessions_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_sessions_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_sessions_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (25.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (63.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (105.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20170714033333)
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "lastname" varchar, "username" varchar, "email" varchar, "password" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170714033333"]]
+  [1m[35m (103.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateSessions (20170714092442)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "sessions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mALTER TABLE "sessions" ADD "user_id" integer[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE  INDEX "index_sessions_on_user_id" ON "sessions" ("user_id")[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170714092442"]]
+  [1m[35m (93.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-07-16 08:23:21.653284"], ["updated_at", "2017-07-16 08:23:21.653284"]]
+  [1m[35m (77.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_sessions_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_sessions_on_user_id' AND type='index'
+[0m
+Started POST "/register" for 127.0.0.1 at 2017-07-16 01:23:30 -0700
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UserController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pf1SgA4GkBMok7EqEvUAh8myZqaRTwHhJJX/cNGZZ9OSRG0X6Ewq2BIjjpkQKnTj0/YTawm6NGxdUia+cl8gnw==", "user"=>{"name"=>"ugur", "lastname"=>"kaiun", "username"=>"sadik", "email"=>"uakin@sfu.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "uakin@sfu.com"], ["LIMIT", 1]]
+  [1m[35mSQL (7.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "lastname", "username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "ugur"], ["lastname", "kaiun"], ["username", "sadik"], ["email", "uakin@sfu.com"], ["password_digest", "$2a$10$u6P.G.VN2gxmawo3qQzOUuwAFaJeFTjoeOHbJaZHba.zL0QXih8ua"], ["created_at", "2017-07-16 08:23:41.099785"], ["updated_at", "2017-07-16 08:23:41.099785"]]
+  [1m[35m (71.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 10046ms (ActiveRecord: 79.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-16 01:23:41 -0700
+Processing by MainController#show as HTML
+  Rendering main/show.html.erb within layouts/application
+  Rendered main/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 266ms (Views: 247.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-16 01:25:07 -0700
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 170ms (Views: 147.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-07-16 01:25:18 -0700
+Processing by SessionController#authenticate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IM+dXkuou7RwR+TXQQP4a54wfGRUZjdcTnMUH1Mly5EnO6ZJ1sUqz3oC/xuVnmrCg99SSp2O4U7uvyDY9KJhXg==", "session"=>{"uid"=>"sadik", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.1.2) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+actionpack (5.1.2) lib/action_controller/metal/request_forgery_protection.rb:227:in `handle_unverified_request'
+actionpack (5.1.2) lib/action_controller/metal/request_forgery_protection.rb:222:in `verify_authenticity_token'
+activesupport (5.1.2) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.2) lib/active_support/callbacks.rb:197:in `call'
+activesupport (5.1.2) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.2) lib/abstract_controller/callbacks.rb:12:in `call'
+actionpack (5.1.2) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.2) lib/active_support/callbacks.rb:198:in `call'
+activesupport (5.1.2) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `call'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.2) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.2) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.2) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.2) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.2) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.2) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.2) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `call'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/login" for 127.0.0.1 at 2017-07-16 01:42:03 -0700
+  
+SyntaxError (C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/controllers/session_controller.rb:6: syntax error, unexpected keyword_or, expecting ')'
+		user = User.where("username = ?" or "email = ?", :uid, :uid )
+		                                   ^
+C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/controllers/session_controller.rb:6: syntax error, unexpected ',', expecting keyword_end
+		user = User.where("username = ?" or "email = ?", :uid, :uid )
+		                                                ^):
+  
+app/controllers/session_controller.rb:6: syntax error, unexpected keyword_or, expecting ')'
+app/controllers/session_controller.rb:6: syntax error, unexpected ',', expecting keyword_end
+Started GET "/login" for 127.0.0.1 at 2017-07-16 01:42:52 -0700
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 145ms (Views: 125.3ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-07-16 01:43:00 -0700
+Processing by SessionController#authenticate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t5QFCZYdtBf2VKXGQpe1SolR/UFtEZcOHZ2oaAELM4uALTqecFcO3MzkmnVASMEukxWIjPXkooNkWnGmos10xw==", "session"=>{"uid"=>"sadik", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Completed 500 Internal Server Error in 3ms
+
+
+  
+SyntaxError (C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/models/user.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+	validates :email,:username uniqueness: true
+	                                     ^):
+  
+app/models/user.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/session_controller.rb:6:in `authenticate'
+Started POST "/login" for 127.0.0.1 at 2017-07-16 01:44:09 -0700
+Processing by SessionController#authenticate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t5QFCZYdtBf2VKXGQpe1SolR/UFtEZcOHZ2oaAELM4uALTqecFcO3MzkmnVASMEukxWIjPXkooNkWnGmos10xw==", "session"=>{"uid"=>"sadik", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Completed 500 Internal Server Error in 2ms
+
+
+  
+SyntaxError (C:/Users/ugura_000/Documents/RailsProject/cmpt276/pizzacluster/app/models/user.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+	validates :email,:username uniqueness: true
+	                                     ^):
+  
+app/models/user.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/session_controller.rb:6:in `authenticate'
+Started POST "/login" for 127.0.0.1 at 2017-07-16 01:45:23 -0700
+Processing by SessionController#authenticate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t5QFCZYdtBf2VKXGQpe1SolR/UFtEZcOHZ2oaAELM4uALTqecFcO3MzkmnVASMEukxWIjPXkooNkWnGmos10xw==", "session"=>{"uid"=>"sadik", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (16.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (username = 'uid' or email = 'uid') LIMIT ?[0m  [["LIMIT", 11]]
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.5ms)
+
+
+  
+  [1m[36mCACHE User Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (username = 'uid' or email = 'uid') LIMIT ?[0m  [["LIMIT", 11]]
+NoMethodError (undefined method `authenticate' for #<ActiveRecord::Relation []>):
+  
+app/controllers/session_controller.rb:8:in `authenticate'
+Started POST "/login" for 127.0.0.1 at 2017-07-16 01:48:40 -0700
+Processing by SessionController#authenticate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t5QFCZYdtBf2VKXGQpe1SolR/UFtEZcOHZ2oaAELM4uALTqecFcO3MzkmnVASMEukxWIjPXkooNkWnGmos10xw==", "session"=>{"uid"=>"sadik", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (username = 'sadik' or email = 'uid') LIMIT ?[0m  [["LIMIT", 11]]
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+
+  
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (username = 'sadik' or email = 'uid') LIMIT ?[0m  [["LIMIT", 11]]
+NoMethodError (undefined method `authenticate' for #<User::ActiveRecord_Relation:0x0000000c2fa998>):
+  
+app/controllers/session_controller.rb:8:in `authenticate'
+Started POST "/login" for 127.0.0.1 at 2017-07-16 01:50:02 -0700
+Processing by SessionController#authenticate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t5QFCZYdtBf2VKXGQpe1SolR/UFtEZcOHZ2oaAELM4uALTqecFcO3MzkmnVASMEukxWIjPXkooNkWnGmos10xw==", "session"=>{"uid"=>"sadik", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (username = 'sadik' or email = 'sadik') ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Redirected to http://localhost:3000login
+Completed 302 Found in 76ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-07-16 01:50:08 -0700
+Processing by SessionController#authenticate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t5QFCZYdtBf2VKXGQpe1SolR/UFtEZcOHZ2oaAELM4uALTqecFcO3MzkmnVASMEukxWIjPXkooNkWnGmos10xw==", "session"=>{"uid"=>"sadik", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (username = 'sadik' or email = 'sadik') ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Redirected to http://localhost:3000login
+Completed 302 Found in 58ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-07-16 01:50:21 -0700
+Processing by SessionController#authenticate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t5QFCZYdtBf2VKXGQpe1SolR/UFtEZcOHZ2oaAELM4uALTqecFcO3MzkmnVASMEukxWIjPXkooNkWnGmos10xw==", "session"=>{"uid"=>"sadik", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (username = 'sadik' or email = 'sadik') ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Redirected to http://localhost:3000login
+Completed 302 Found in 71ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-16 01:50:23 -0700
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 114ms (Views: 93.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-07-16 01:50:29 -0700
+Processing by SessionController#authenticate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tP5f/rEOj43AyEWmK4ueXyihyWDgq2whQiMrcKGe71iDR2BpV0Q1Rvp4ehUpVOo7MuW8rXheWaw75PK+AlioFA==", "session"=>{"uid"=>"sadik", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (username = 'sadik' or email = 'sadik') ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Redirected to http://localhost:3000login
+Completed 302 Found in 59ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-16 01:51:43 -0700
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 121ms (Views: 102.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-07-16 01:52:40 -0700
+Processing by SessionController#authenticate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fbRKLJ6vpFNMagRt57bu2XUM8DPU96jJBfRJ8u8Ml79KDXW7eOUemHbaO97laZq9b0iF/kwCnUR8M5A8TMrQ8w==", "session"=>{"uid"=>"uakin@sfu.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (username = 'uakin@sfu.com' or email = 'uakin@sfu.com') ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Redirected to http://localhost:3000login
+Completed 302 Found in 59ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/register" for 127.0.0.1 at 2017-07-16 01:52:53 -0700
+Processing by UserController#new as HTML
+  Rendering user/new.html.erb within layouts/application
+  Rendered user/new.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 165ms (Views: 145.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/register" for 127.0.0.1 at 2017-07-16 01:53:06 -0700
+Processing by UserController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"o0W64VfoSJ2SE3SnSMHkDC+S/5f81/P2k7WVw/gNgLsmKcpNeKGsssQOvRG/w0AylqeI1ea3aG7LG6OE6k3zwg==", "user"=>{"name"=>"sad", "lastname"=>"aslda", "username"=>"dsasd", "email"=>"ugurakin21@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ugurakin21@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "dsasd"], ["LIMIT", 1]]
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "lastname", "username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "sad"], ["lastname", "aslda"], ["username", "dsasd"], ["email", "ugurakin21@gmail.com"], ["password_digest", "$2a$10$56WSgaWxGSTDB3GABbasrenXVioZvgkHgn3wPPUKaFe7t.b7UzAWi"], ["created_at", "2017-07-16 08:53:06.628571"], ["updated_at", "2017-07-16 08:53:06.628571"]]
+  [1m[35m (62.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 131ms (ActiveRecord: 63.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-16 01:53:06 -0700
+Processing by MainController#show as HTML
+  Rendering main/show.html.erb within layouts/application
+  Rendered main/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 148ms (Views: 122.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-16 01:53:09 -0700
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 128ms (Views: 99.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-07-16 01:53:24 -0700
+Processing by SessionController#authenticate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5GlQMbRcFZHCdn8N4LszEQSgft1Ql8WUEvzyYna8djHjnWsmKTGE6sgzZME0JqG4GU9Q85l/E4ayMMal0Tvc/g==", "session"=>{"uid"=>"ugurakin21@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.1.2) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+actionpack (5.1.2) lib/action_controller/metal/request_forgery_protection.rb:227:in `handle_unverified_request'
+actionpack (5.1.2) lib/action_controller/metal/request_forgery_protection.rb:222:in `verify_authenticity_token'
+activesupport (5.1.2) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.2) lib/active_support/callbacks.rb:197:in `call'
+activesupport (5.1.2) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.2) lib/abstract_controller/callbacks.rb:12:in `call'
+actionpack (5.1.2) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.2) lib/active_support/callbacks.rb:198:in `call'
+activesupport (5.1.2) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `call'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.2) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.2) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.2) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.2) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.2) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.2) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.2) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `call'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/login" for 127.0.0.1 at 2017-07-16 01:59:34 -0700
+Processing by SessionController#authenticate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5GlQMbRcFZHCdn8N4LszEQSgft1Ql8WUEvzyYna8djHjnWsmKTGE6sgzZME0JqG4GU9Q85l/E4ayMMal0Tvc/g==", "session"=>{"uid"=>"ugurakin21@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (username = 'ugurakin21@gmail.com' or email = 'ugurakin21@gmail.com') ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Completed 500 Internal Server Error in 78ms (ActiveRecord: 3.0ms)
+
+
+  
+ArgumentError (When assigning attributes, you must pass a hash as an argument.):
+  
+app/controllers/session_controller.rb:9:in `authenticate'
+Started POST "/login" for 127.0.0.1 at 2017-07-16 02:00:22 -0700
+Processing by SessionController#authenticate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5GlQMbRcFZHCdn8N4LszEQSgft1Ql8WUEvzyYna8djHjnWsmKTGE6sgzZME0JqG4GU9Q85l/E4ayMMal0Tvc/g==", "session"=>{"uid"=>"ugurakin21@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (username = 'ugurakin21@gmail.com' or email = 'ugurakin21@gmail.com') ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Completed 500 Internal Server Error in 79ms (ActiveRecord: 3.0ms)
+
+
+  
+ArgumentError (When assigning attributes, you must pass a hash as an argument.):
+  
+app/controllers/session_controller.rb:9:in `authenticate'
+Started POST "/login" for 127.0.0.1 at 2017-07-16 02:00:43 -0700
+Processing by SessionController#authenticate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5GlQMbRcFZHCdn8N4LszEQSgft1Ql8WUEvzyYna8djHjnWsmKTGE6sgzZME0JqG4GU9Q85l/E4ayMMal0Tvc/g==", "session"=>{"uid"=>"ugurakin21@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (username = 'ugurakin21@gmail.com' or email = 'ugurakin21@gmail.com') ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "sessions" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2017-07-16 09:00:43.397550"], ["updated_at", "2017-07-16 09:00:43.397550"]]
+  [1m[35m (127.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 212ms (ActiveRecord: 129.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-16 02:00:43 -0700
+Processing by MainController#show as HTML
+  Rendering main/show.html.erb within layouts/application
+  Rendered main/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 161ms (Views: 139.5ms | ActiveRecord: 0.0ms)
+
+

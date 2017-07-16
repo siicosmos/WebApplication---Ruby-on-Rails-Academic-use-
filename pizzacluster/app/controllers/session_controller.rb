@@ -3,22 +3,19 @@ class SessionController < ApplicationController
 	end
 
 	def authenticate
-		user = User.find_by username: :uid
-		unless user
-			user = User.find_by email: :uid
-		end
+		user = User.where("username = ? or email = ?", params[:session][:uid],params[:session][:uid] ).first
 
-		if user && user.authenticate(:password)
-			@session = Session.new user.id
+		if user && user.authenticate(params[:session][:password])
+			@session = Session.new {user.id}
 			if @session.save
 				redirect_to root_path
 			else
 				flash[:alert] = "There was an error logging in, please try again..."
-				redirect_to 'login'
+				redirect_to 'login', :via => 'GET'
 			end
 		else
 			flash[:alert] = "Wrong username or password!"
-			redirect_to 'login'
+			redirect_to 'login', :via => 'GET'
 		end
 
 	end
