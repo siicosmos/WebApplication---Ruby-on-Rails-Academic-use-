@@ -23,7 +23,20 @@
     <div class = "w3-container" id = "header_wrapper">
       <h1><%= link_to "PizzaCluster", root_path%></h1>
       <div id = "login_wrapper">
-        <%= link_to 'LOGIN/REGISTER', 'login',  class: "w3-btn w3-red", id: "login_button" %>
+        <% btn_name = nil %>
+           <% btn_link_path = nil
+           %>
+        <%if session[:user_id]
+            btn_name = 'LOG OUT'
+            btn_link_path = 'logout'
+            %>
+        <%else
+            btn_name = 'LOG IN'
+            btn_link_path = 'login'
+          end
+            %>
+
+        <%= link_to btn_name, btn_link_path,  class: "w3-btn w3-red", id: "login_button" %>
       </div>
       <div class = "w3-container" id = "main_nav_wrapper">
         <tr>
@@ -32,12 +45,15 @@
           <td><%= link_to 'Ordering Online', :controller => 'order', :action => "show" %></td>
           <td><%= link_to 'About',  'info' %></td>
           <%end%>
-        </tr> 
+        </tr>
       </div>
       <div id = "website_logo_wrapper">
       </div>
     </div>
     <div class = 'w3-container' id = 'content_wrapper'>
+      <% if flash[:alert] %>
+      <%= flash[:alert] %>
+      <% end %>
       <%= yield %>
     </div>
   </div>

@@ -2,17 +2,12 @@ class SessionController < ApplicationController
 	def new
 	end
 
-	def authenticate
+	def startsession
 		user = User.where("username = ? or email = ?", params[:session][:uid],params[:session][:uid] ).first
 
 		if user && user.authenticate(params[:session][:password])
-			@session = Session.new {user.id}
-			if @session.save
-				redirect_to root_path
-			else
-				flash[:alert] = "There was an error logging in, please try again..."
-				redirect_to 'login', :via => 'GET'
-			end
+			session[:user_id] = user.id;
+			redirect_to root_path
 		else
 			flash[:alert] = "Wrong username or password!"
 			redirect_to 'login', :via => 'GET'
@@ -20,4 +15,13 @@ class SessionController < ApplicationController
 
 	end
 
+	def endsession
+		if session[:user_id]
+			session[:user_id] = nil;
+			flash[:alert] = "You logged out successfully."
+		else
+			flash[:alert] = 'Cannot log out unless logged in!'
+		end
+		redirect_to 'login', :via => 'GET'
+	end
 end

@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   get 'register' => "user#new"
   post 'register' => "user#create"
   get 'login' => "session#new"
-  post 'login' => "session#authenticate"
+  post 'login' => "session#startsession"
+  get 'logout' => "session#endsession"
   root  :controller => 'main', :action => 'show'
 
 end

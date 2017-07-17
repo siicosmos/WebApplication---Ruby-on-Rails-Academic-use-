@@ -6,15 +6,11 @@
 <%= stylesheet_link_tag "rlform"%>
 <%end%>
 
-<% if flash[:alert] %>
-<%= flash[:alert] %>
-<%end%>
-
 <div class = 'w3-container' id = 'form_container'>
 	<div class = 'w3-container w3-red'>
 		<h2> LOGIN </h2>
 	</div>
-	<%= form_for :session, url: 'login', :via => 'GET', :html => {:class => 'w3-container'} do |f| %>
+	<%= form_for :session, :html => {:class => 'w3-container'} do |f| %>
 	Username or Email: <%= f.text_field :uid, :class => 'w3-input w3-border w3-round' %>
 	Password: <%= f.password_field :password, :class => 'w3-input w3-border w3-round'%>
 	<%= f.submit "Login", :class => 'w3-btn w3-red'%>
