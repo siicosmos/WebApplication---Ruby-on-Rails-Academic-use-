@@ -4624,3 +4624,184 @@ Completed 500 Internal Server Error in 27ms (Views: 26.7ms | ActiveRecord: 0.0ms
 AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
   
 app/controllers/session_controller.rb:26:in `endsession'
+Started GET "/" for 127.0.0.1 at 2017-07-17 14:44:33 -0700
+Started GET "/" for 127.0.0.1 at 2017-07-17 14:44:33 -0700
+Started GET "/login" for 127.0.0.1 at 2017-07-17 14:44:33 -0700
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#show as HTML
+Processing by MainController#show as HTML
+Processing by SessionController#new as HTML
+  Rendering main/show.html.erb within layouts/application
+  Rendering session/new.html.erb within layouts/application
+  Rendering main/show.html.erb within layouts/application
+  Rendered main/show.html.erb within layouts/application (1.7ms)
+  Rendered main/show.html.erb within layouts/application (0.1ms)
+  Rendered session/new.html.erb within layouts/application (349.8ms)
+Completed 200 OK in 520ms (Views: 493.1ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 496ms (Views: 492.8ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 494ms (Views: 487.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-17 14:45:09 -0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#show as HTML
+  Rendering main/show.html.erb within layouts/application
+  Rendered main/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 276ms (Views: 266.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-17 14:45:12 -0700
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 36ms (Views: 33.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 127.0.0.1 at 2017-07-17 14:45:15 -0700
+Processing by UserController#new as HTML
+  Rendering user/new.html.erb within layouts/application
+  Rendered user/new.html.erb within layouts/application (19.3ms)
+Completed 200 OK in 49ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/register" for 127.0.0.1 at 2017-07-17 14:45:37 -0700
+Processing by UserController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UnCarrQ3vUbAxxaMSU2FqxrSZA1LjJ6xflobg+zDy6IvSLuQe28VFGTZQzPNfDvDCHAVgs6g3pRtye8mul7oYg==", "user"=>{"name"=>"rishabh", "lastname"=>"thanki", "username"=>"rthanki", "email"=>"rthanki@sfu.ca", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "rthanki@sfu.ca"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "rthanki"], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "lastname", "username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "rishabh"], ["lastname", "thanki"], ["username", "rthanki"], ["email", "rthanki@sfu.ca"], ["password_digest", "$2a$10$pcdaoYU4wmLA4MKOdyfU8.gr.00oeFjrdQUTv5l0W.rejkg.3w65a"], ["created_at", "2017-07-17 21:45:38.014512"], ["updated_at", "2017-07-17 21:45:38.014512"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 144ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-17 14:45:38 -0700
+Processing by MainController#show as HTML
+  Rendering main/show.html.erb within layouts/application
+  Rendered main/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 24ms (Views: 22.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-17 14:45:46 -0700
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 32ms (Views: 29.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-07-17 14:45:52 -0700
+Processing by SessionController#startsession as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vjMFVSL4pPb5UzIct3HW/ngbkyEzQqZM17X/Y0Pp6OXes2H7gNb8kisG7CTc3HbSqoKY/8xbcOCXR+AOKGLl1g==", "session"=>{"uid"=>"rthanki", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (username = 'rthanki' or email = 'rthanki') ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 108ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-17 14:45:52 -0700
+Processing by MainController#show as HTML
+  Rendering main/show.html.erb within layouts/application
+  Rendered main/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2017-07-17 14:45:57 -0700
+Processing by SessionController#endsession as HTML
+Redirected to http://localhost:3000login
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2017-07-17 14:45:57 -0700
+Processing by SessionController#endsession as HTML
+Redirected to http://localhost:3000login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-17 14:46:03 -0700
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 46ms (Views: 43.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-17 14:48:17 -0700
+Started GET "/" for 127.0.0.1 at 2017-07-17 14:48:17 -0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#show as HTML
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#show as HTML
+  Rendering main/show.html.erb within layouts/application
+  Rendered main/show.html.erb within layouts/application (1.5ms)
+  Rendering main/show.html.erb within layouts/application
+  Rendered main/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 353ms (Views: 339.3ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 341ms (Views: 334.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-17 14:48:47 -0700
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 35ms (Views: 32.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 127.0.0.1 at 2017-07-17 14:49:34 -0700
+Processing by UserController#new as HTML
+  Rendering user/new.html.erb within layouts/application
+  Rendered user/new.html.erb within layouts/application (27.1ms)
+Completed 200 OK in 75ms (Views: 72.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-17 16:14:25 -0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#show as HTML
+  Rendering main/show.html.erb within layouts/application
+  Rendered main/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 396ms (Views: 376.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-17 16:14:29 -0700
+Processing by MainController#show as HTML
+  Rendering main/show.html.erb within layouts/application
+  Rendered main/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 48ms (Views: 46.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-17 16:14:30 -0700
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 60ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-07-17 16:14:37 -0700
+Processing by SessionController#startsession as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ya75UhALQEQ3NuR7tih/5MnkfMskYjnB9nwxazcS1GIBLp38siUYIOVjOkPdhd/IG313Fdt77222ji4GXJnZUQ==", "session"=>{"uid"=>"k@k.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (username = 'k@k.com' or email = 'k@k.com') ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Redirected to http://localhost:3000login
+Completed 302 Found in 19ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-17 16:14:45 -0700
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 78ms (Views: 75.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-07-17 16:15:01 -0700
+Processing by SessionController#startsession as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7Flh/sBJaZYHZcH4WG8QzaJtsBU4EDS4mI8fO6YV7qCM2QVQYmcx8tUwH8AzwrDhcPS7y8cJ4hTYfQBWzZ7jkw==", "session"=>{"uid"=>"l@l.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (username = 'l@l.com' or email = 'l@l.com') ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Redirected to http://localhost:3000login
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
