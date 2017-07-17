@@ -23,9 +23,6 @@
     <div class = "w3-container" id = "header_wrapper">
       <h1><%= link_to "PizzaCluster", root_path%></h1>
       <div id = "login_wrapper">
-        <% btn_name = nil %>
-           <% btn_link_path = nil
-           %>
         <%if session[:user_id]
             btn_name = 'LOG OUT'
             btn_link_path = 'logout'

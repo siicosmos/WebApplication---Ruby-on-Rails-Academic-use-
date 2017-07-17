@@ -1,5 +1,8 @@
 class SessionController < ApplicationController
 	def new
+		if session[:user_id]
+			redirect_to root_path
+		end
 	end
 
 	def startsession
@@ -7,10 +10,10 @@ class SessionController < ApplicationController
 
 		if user && user.authenticate(params[:session][:password])
 			session[:user_id] = user.id;
-			redirect_to root_path
+			redirect_back fallback_location: root_path
 		else
 			flash[:alert] = "Wrong username or password!"
-			redirect_to 'login', :via => 'GET'
+			redirect_back fallback_location: root_path
 		end
 
 	end
@@ -22,6 +25,6 @@ class SessionController < ApplicationController
 		else
 			flash[:alert] = 'Cannot log out unless logged in!'
 		end
-		redirect_to 'login', :via => 'GET'
+			redirect_back fallback_location: root_path
 	end
 end

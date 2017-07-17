@@ -1,26 +1,20 @@
 class UserController < ApplicationController
 	def new
+		if session[:user_id]
+			redirect_to root_path
+		end
 	end
 
 	def create
 		user = User.new(user_params)
-		#@user.name = params[:name]
-		#@user.lastname = params[:lastname]
-		#@user.username = params[:username]
-		#@user.email = params[:email]
-		#@user.password = params[:password]
-		
-
-
-
 
 		if user.save!
 			flash[:alert] = "User successfully created!"
-			redirect_to root_path
+			redirect_to login_path
 
 		else
 			flash[:alert] = "User could not be created!"
-			redirect_to login_path
+			redirect_to root_path
 		end
 
 	end
