@@ -1,1 +1,35 @@
 <h1> im main </h1>
+<!--
+input[type=text] {
+			    width: 130px;
+			    box-sizing: border-box;
+			    border: 2px solid #1609A8;
+			    border-radius: 4px;
+			    font-size: 13px;
+			    background-color: white;
+			    background-position: 10px 10px;
+			    background-repeat: no-repeat;
+			    padding: 12px 20px 12px 40px;
+			    -webkit-transition: width 0.4s ease-in-out;
+			    transition: width 0.4s ease-in-out;
+			}
+
+			input[type=text]:focus {
+			    width: 100%;
+			}
+		-->
+
+
+		<div id = 'main_content_wrapper' class = 'w3-container main_wrapper'>
+			<div id = "address_block_wrapper">
+				<div id = 'search_bar_wrapper'>
+					<%= text_field_tag 'search',nil, placeholder: 'Enter your address...' %>
+					<%= link_to 'Find Restaurants', 'restaurants', class: 'w3-btn w3-red', id: "find_btn" %>
+				</div>
+				<!-- imaginary map -->
+				<div id = "psuedo_map" style = "background-color: black">
+				</div>
+			</div>
+		</div>
+
+

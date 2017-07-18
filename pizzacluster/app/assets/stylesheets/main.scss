@@ -1,3 +1,32 @@
 // Place all the styles related to the main controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#address_block_wrapper{
+	text-align: center;
+}
+
+#find_btn{
+	background-size: 100%;
+}
+
+#search{
+	display: inline-block;
+	width: 470px;
+	box-sizing: border-box;
+	border: 2px solid #1609A8;
+	border-radius: 4px;
+	font-size: 17px;
+	background-color: white;
+	background-position: 10px 10px;
+	background-repeat: no-repeat;
+	padding: 12px 20px 12px 40px;
+	-webkit-transition: width 0.4s ease-in-out;
+	transition: width 0.4s ease-in-out;
+}
+#psuedo_map{
+	display: inline-block;
+	width: 550px;
+	height: 345px;
+}

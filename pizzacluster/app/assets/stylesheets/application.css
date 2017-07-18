@@ -13,9 +13,12 @@
  *= require_tree .
  *= require_self
  */
- #main_wrapper{
- 	height: 100%;
+.main_wrapper{
+	height: 100%;
  	width: 100%;
+}
+
+ #main_wrapper{
  	z-index: -1;
  }
 
@@ -26,6 +29,11 @@
  #login_wrapper{
  	float: right;
  }
+
+#yield_wrapper{
+	height: 100%;
+	width: 100%;
+}
 
  /*h1{
  	font-size: 36px;

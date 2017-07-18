@@ -12,14 +12,11 @@
 
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= stylesheet_link_tag 'w3' %>
-  <% if content_for?(:spcss) %>
-  <%= yield(:spcss) %>
-  <%end%>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 </head>
 
 <body>
-  <div id = "main_wrapper">
+  <div id = "main_wrapper" class = "main_wrapper">
     <div class = "w3-container" id = "header_wrapper">
       <h1><%= link_to "PizzaCluster", root_path%></h1>
       <div id = "login_wrapper">
@@ -47,7 +44,7 @@
       <div id = "website_logo_wrapper">
       </div>
     </div>
-    <div class = 'w3-container' id = 'content_wrapper'>
+    <div class = 'w3-container' id = 'yield_wrapper'>
       <% if flash[:alert] %>
       <%= flash[:alert] %>
       <% end %>
