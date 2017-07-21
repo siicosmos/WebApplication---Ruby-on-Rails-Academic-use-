@@ -67,6 +67,7 @@ GEM
     execjs (2.7.0)
     ffi (1.9.18)
     ffi (1.9.18-x64-mingw32)
+    geocoder (1.4.4)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
     i18n (0.8.6)
@@ -179,6 +180,7 @@ DEPENDENCIES
   byebug
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
+  geocoder
   jbuilder (~> 2.5)
   puma (~> 3.7)
   rails (~> 5.1.1)
