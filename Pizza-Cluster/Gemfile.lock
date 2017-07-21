@@ -70,6 +70,7 @@ GEM
     ffi (1.9.18)
     ffi (1.9.18-x64-mingw32)
     ffi (1.9.18-x86-mingw32)
+    geocoder (1.4.4)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
     i18n (0.8.4)
@@ -193,6 +194,7 @@ DEPENDENCIES
   css (~> 0.0.4)
   embedded_associations (~> 4.1, >= 4.1.2)
   embedded_document (~> 0.0.2)
+  geocoder
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   puma (~> 3.7)

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    <% if content_for?(:title)%>
+    <%= yield(:title) %>
+    <%else %>
+    PizzaCluster
+    <%end%>
+  </title>
+  <%= csrf_meta_tags %>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= stylesheet_link_tag 'w3' %>
+  <% if content_for?(:spcss) %>
+  <%= yield(:spcss) %>
+  <%end%>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body>
+  <div id = "main_wrapper">
+    <div class = "w3-container" id = "header_wrapper">
+      <h1><%= link_to "PizzaCluster", root_path%></h1>
+      <div id = "login_wrapper">
+        <%if session[:user_id]
+            btn_name = 'LOG OUT'
+            btn_link_path = 'logout'
+            %>
+        <%else
+            btn_name = 'LOG IN'
+            btn_link_path = 'login'
+          end
+            %>
+
+        <%= link_to btn_name, btn_link_path,  class: "w3-btn w3-red", id: "login_button" %>
+      </div>
+      <div class = "w3-container" id = "main_nav_wrapper">
+        <tr>
+        <%if false%>
+          <td><%= link_to 'Pizza Browsing', :controller =>'menu', :action => "show" %></td>
+          <td><%= link_to 'Ordering Online', :controller => 'order', :action => "show" %></td>
+          <td><%= link_to 'About',  'info' %></td>
+          <%end%>
+        </tr>
+      </div>
+      <div id = "website_logo_wrapper">
+      </div>
+    </div>
+    <div class = 'w3-container' id = 'content_wrapper'>
+      <% if flash[:alert] %>
+      <%= flash[:alert] %>
+      <% end %>
+      <%= yield %>
+    </div>
+  </div>
+</body>
+</html>
