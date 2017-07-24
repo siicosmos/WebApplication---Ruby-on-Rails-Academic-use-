@@ -1,0 +1,77 @@
+<html>
+	<style>
+			#restaurantlist {
+			    /* Remove default list styling */
+			    list-style-type: none;
+			    padding: 0;
+			    margin: 0;
+				}
+
+			#restaurantlist li a {
+			    border: 1px solid #ddd; /* Add a border to all links */
+			    margin-top: -1px; /* Prevent double borders */
+			    background-color: #f6f6f6; /* Grey background color */
+			    padding: 12px; /* Add some padding */
+			    text-decoration: none; /* Remove default text underline */
+			    font-size: 18px; /* Increase the font-size */
+			    color: black; /* Add a black text color */
+			    display: block; /* Make it into a block element to fill the whole list */
+				}
+
+			#restaurantlist li a:hover:not(.header) {
+			    background-color: #555552; /* Add a hover effect to all links, except for headers */
+				}
+
+			input[type=text] {
+			    width: 130px;
+			    box-sizing: border-box;
+			    border: 2px solid #1609A8;
+			    border-radius: 4px;
+			    font-size: 13px;
+			    background-color: white;
+			    background-position: 10px 10px;
+			    background-repeat: no-repeat;
+			    padding: 12px 20px 12px 40px;
+			    -webkit-transition: width 0.4s ease-in-out;
+			    transition: width 0.4s ease-in-out;
+			}
+
+			input[type=text]:focus {
+			    width: 100%;
+			}
+	</style>
+	<script>
+		function searchfunction() {
+
+		    var input, filter, ul, li, a, i;
+		    input = document.getElementById('search');
+		    filter = input.value.toUpperCase();
+		    ul = document.getElementById("restaurantlist");
+		    li = ul.getElementsByTagName('li');
+
+		    for (i = 0; i < li.length; i++) {
+		        a = li[i].getElementsByTagName("a")[0];
+		        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+		            li[i].style.display = "";
+		        } else {
+		            li[i].style.display = "none";
+		        }
+		    }
+		}
+	</script>
+		<div><h4>Restaurants in your area.</h4>
+			<form>
+		  		<input type="text" id="search" name="search" onkeyup="searchfunction()" placeholder="Search..">
+					<ul id="restaurantlist">
+
+					  <li><a href="#">Dominos</a></li>
+					  <li><a href="#">Pizza Hut</a></li>
+					  <li><a href="#">Arnold's Pizza shop</a></li>
+					  <li><a href="#">Ugur's Pizzeria(Best)</a></li>
+					  <li><a href="#">Marcello Pizzeria</a></li>
+					  <li><a href="#">Francesco's Ristorante Italia</a></li>
+					  <li><a href="#">Boston Pizza</a></li>
+					</ul>
+			</form>
+		</div>
+</html>
