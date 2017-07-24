@@ -1,1 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
 
+Body { background-image: url("https://www.clipartsgram.com/image/2123723046-jenny-smiths-lds-ideas-pizza.gif");}
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="#home">Pizza Cluster</a></li>
+  <li><a href="#news">Menu</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li style="float:right"><a href="#about">LOGIN</a></li>
+</ul>
+</br></br>
+
+
+<h1 style="font-family:courier;">Checkout</h1>
+<div class="gallery">
+  <a target="_blank" href="LOGIN PAGE">
+    <img src="https://st3.depositphotos.com/1915171/12777/v/450/depositphotos_127771820-stock-illustration-free-delivery-sign-icon-delivery.jpg" alt="Mountains" width="300" height="200">
+  </a>
+  <div class="desc"><b>DELIVERY</b></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="ORDER PAGE">
+    <img src="https://previews.123rf.com/images/blankstock/blankstock1501/blankstock150102580/35357773-Take-away-sign-icon-Takeaway-food-or-coffee-drink-symbol-Gray-flat-square-button-with-shadow-Modern--Stock-Vector.jpg" alt="Mountains" width="300" height="200">
+  </a>
+  <div class="desc"><b>CARRYOUT</b></div>
+</div>
+
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+
+<p id="demo"><b>We just need to know where you are so we can find your nearest store.</b></p>
+
+<p id="demo"><b>SIGN IN to your pizza profile to access your saved contact and payment information.<b></p></br>
+
+<button onclick="getLocation()">Find Me </button>
+
+<div id="mapholder"></div>
+
+<script src="https://maps.google.com/maps/api/js?sensor=false&key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU"></script>
+
+<script>
+var x = document.getElementById("demo");
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+    lat = position.coords.latitude;
+    lon = position.coords.longitude;
+    latlon = new google.maps.LatLng(lat, lon)
+    mapholder = document.getElementById('mapholder')
+    mapholder.style.height = '250px';
+    mapholder.style.width = '500px';
+
+    var myOptions = {
+    center:latlon,zoom:14,
+    mapTypeId:google.maps.MapTypeId.ROADMAP,
+    mapTypeControl:false,
+    navigationControlOptions:{style:google.maps.NavigationControlStyle.SMALL}
+    }
+    
+    var map = new google.maps.Map(document.getElementById("mapholder"), myOptions);
+    var marker = new google.maps.Marker({position:latlon,map:map,title:"You are here!"});
+}
+
+function showError(error) {
+    switch(error.code) {
+        case error.PERMISSION_DENIED:
+            x.innerHTML = "User denied the request for Geolocation."
+            break;
+        case error.POSITION_UNAVAILABLE:
+            x.innerHTML = "Location information is unavailable."
+            break;
+        case error.TIMEOUT:
+            x.innerHTML = "The request to get user location timed out."
+            break;
+        case error.UNKNOWN_ERROR:
+            x.innerHTML = "An unknown error occurred."
+            break;
+    }
+}
+</script>
+
+</body>
+</html>
