@@ -1,25 +1,25 @@
-<h1> im user new</h1>
+
 
 <% provide :title, "Register"%>
 
 <div class = 'w3-container' id = 'form_container'>
-	<div class = 'w3-container w3-red'>
+	<div class = 'w3-container w3-blue'>
 		<h2> REGISTER </h2>
 	</div>
 	<%= form_for :user, :html => {:class => 'w3-container'} do |f| %>
 	<%= f.label "First name:" %>
-	 <%= f.text_field :name, :class => 'w3-input w3-border w3-round' %>
+	 <%= f.text_field :name, :class => 'w3-input w3-border w3-round spaced' %>
 	<%= f.label "Last name:" %>
-	 <%= f.text_field :lastname, :class => 'w3-input w3-border w3-round'%>
+	 <%= f.text_field :lastname, :class => 'w3-input w3-border w3-round spaced'%>
 	<%= f.label "Username:" %>
-	 <%= f.text_field :username, :class => 'w3-input w3-border w3-round' %>
+	 <%= f.text_field :username, :class => 'w3-input w3-border w3-round spaced' %>
 	<%= f.label "Email:" %>
-	 <%= f.text_field :email, :class => 'w3-input w3-border w3-round' %>
+	 <%= f.text_field :email, :class => 'w3-input w3-border w3-round spaced' %>
 	<%= f.label "Password:" %>
-	 <%= f.password_field :password, :class => 'w3-input w3-border w3-round'%>
+	 <%= f.password_field :password, :class => 'w3-input w3-border w3-round spaced'%>
 	<%= f.label "Password Confirmation:" %>
-	 <%= f.password_field :password_confirmation, :class => 'w3-input w3-border w3-round' %>
-	<%= f.submit "Register", :class => 'w3-btn w3-red'%>
+	 <%= f.password_field :password_confirmation, :class => 'w3-input w3-border w3-round spaced' %>
+	<%= f.submit "Register", :class => 'w3-btn w3-blue'%>
 	<% end %>
 	<div class = 'w3-container' id = 'log_link_wrapper'>
 		<p> Already a member?

@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
-.main_wrapper{
+#main_wrapper{
 	height: 100%;
  	width: 100%;
 }
@@ -24,13 +24,28 @@
 
  #header_wrapper{
  	width: 100%
+ 	vertical-align:top;
+ }
+ #logo_wrapper{
+ 	display:inline-block;
+ 	text-align: center;
  }
 
- #login_wrapper{
+#title_wrapper{
+	display:inline-block;
+	text-align: center;
+	font-size: 75pt;
+}
+#filler_wrapper{
+	display: inline-block;
+
+}
+ #login_button{
  	float: right;
  }
 
 #yield_wrapper{
+	margin-top: 50px;
 	height: 100%;
 	width: 100%;
 }

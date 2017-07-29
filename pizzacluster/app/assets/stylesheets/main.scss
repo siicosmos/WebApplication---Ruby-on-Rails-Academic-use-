@@ -3,11 +3,17 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-#address_block_wrapper{
+#main_content_wrapper{
 	text-align: center;
+}
+#address_block_wrapper{
+	display: inline-block;
+	margin: 0 auto;
+
 }
 
 #find_btn{
+	float: right;
 	background-size: 100%;
 }
 
@@ -21,12 +27,12 @@
 	background-color: white;
 	background-position: 10px 10px;
 	background-repeat: no-repeat;
-	padding: 12px 20px 12px 40px;
+	padding: 5px 20px 5px 40px;
 	-webkit-transition: width 0.4s ease-in-out;
 	transition: width 0.4s ease-in-out;
 }
-#psuedo_map{
-	display: inline-block;
-	width: 550px;
+#map{
+	width: 100%;
 	height: 345px;
+	background-color: black;
 }
