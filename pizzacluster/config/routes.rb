@@ -8,6 +8,10 @@ Rails.application.routes.draw do
   get 'menu' => "menu#show"
   get 'restaurants' =>"main#list"
   get 'order' => "menu#order"
+
+  #static pages:
+  get 'about' => "main#staticAbout"
+  get 'contact' => "main#staticContact"
   root  :controller => 'main', :action => 'show'
 
 end
