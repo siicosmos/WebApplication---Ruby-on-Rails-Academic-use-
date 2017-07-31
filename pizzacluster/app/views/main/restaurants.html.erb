@@ -1,0 +1,30 @@
+<style>
+	#restaurantlist {
+		/* Remove default list styling */
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		background-color: white;
+	}
+
+	#restaurantlist li a {
+		border: 1px solid #ddd; /* Add a border to all links */
+		display: block;
+		margin-top: -1px; /* Prevent double borders */
+		padding: 12px; /* Add some padding */
+		text-decoration: none; /* Remove default text underline */
+		font-size: 18px; /* Increase the font-size */
+	}
+</style>
+<div>
+	<ul id="restaurantlist">
+
+	<li><%= link_to 'Dominos', 'menu', class: "w3-button w3-blue" %></li>
+	<li><%= link_to 'Pizza Hut', 'menu', class: "w3-button w3-blue" %></li>
+	<li><%= link_to "Arnold\'s Pizza shop", 'menu', class: "w3-button w3-blue" %></li>
+	<li><%= link_to "Ugur\'s Pizzeria(Best)", 'menu', class: "w3-button w3-blue" %></li>
+	<li><%= link_to 'Marcello Pizzeria', 'menu', class: "w3-button w3-blue" %></li>
+	<li><%= link_to "Francesco\'s Ristorante Italia", 'menu', class: "w3-button w3-blue" %></li>
+	<li><%= link_to 'Boston Pizza', 'menu', class: "w3-button w3-blue" %></li>
+	</ul>
+</div>

@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   post 'login' => "session#startsession"
   get 'logout' => "session#endsession"
   get 'menu' => "menu#show"
+  get 'restaurants' =>"main#list"
+  get 'order' => "menu#order"
   root  :controller => 'main', :action => 'show'
 
 end

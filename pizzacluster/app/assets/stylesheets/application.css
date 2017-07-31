@@ -16,16 +16,22 @@
 #main_wrapper{
 	height: 100%;
  	width: 100%;
+ 	min-height: 1500px;
 }
 
  #main_wrapper{
  	z-index: -1;
  }
 
+#header{
+	text-align: center;
+}
+
  #header_wrapper{
+ 	display: inline-block;
  	width: 100%
- 	vertical-align:top;
  }
+
  #logo_wrapper{
  	display:inline-block;
  	text-align: center;

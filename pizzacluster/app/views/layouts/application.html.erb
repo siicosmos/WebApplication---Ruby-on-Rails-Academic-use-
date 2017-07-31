@@ -17,17 +17,18 @@
 
 <body>
   <div id = "main_wrapper">
-  <div id = "header_wrapper">
-      <div id = "logo_wrapper">
-        <%= image_tag "logo.jpg" %>
+    <div id = "header">
+      <div id = "header_wrapper">
+        <div id = "logo_wrapper">
+          <%= image_tag "logo.jpg" %>
+        </div>
+        <div id = "title_wrapper" class = "w3-container">
+          PIZZA CLUSTER
+        </div>
+        <div id = filler_wrapper>
+          <%= image_tag "pizza.png" %>    
+        </div>
       </div>
-      <div id = "title_wrapper" class = "w3-container">
-        PIZZA CLUSTER
-      </div>
-      <div id = filler_wrapper>
-        <%= image_tag "pizza.png" %>    
-      </div>
-      
       <div id = "nav_wrapper">
         <%if session[:user_id]
           btn_name = 'LOG OUT'
@@ -39,11 +40,8 @@
         end
         %>
         <div id= "nav_bar" class = "w3-bar w3-dark-gray">
-          <%= link_to "Home", root_path, class: "w3-bar-item w3-btn w3-black w3-hover" %>
+        <%= link_to "Home", root_path, class: "w3-bar-item w3-btn w3-black"%>
           <%= link_to "Contact Us", 'contact', class: "w3-bar-item w3-btn" %>
-          <% if false %>
-          <%= link_to "Restaurants", 'restaurants', class: "w3-bar-item w3-btn" %>
-          <% end %>
 
           <%= link_to "About", 'about', class: "w3-bar-item w3-btn" %>          
           <%= link_to btn_name, btn_link_path,  class: "w3-bar-item w3-btn w3-blue", id: "login_button" %>
