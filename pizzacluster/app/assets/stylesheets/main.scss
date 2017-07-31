@@ -45,5 +45,25 @@
 	width: 60%;
 	margin: 10px auto;
 	padding-top: 5px;
+}
 
+#restaurantlist {
+	/* Remove default list styling */
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+#restaurantlist li,li a {
+	display: block;
+	width: 100%;
+	margin-top: 5px; /* Prevent double borders */
+	padding: 12px; /* Add some padding */
+	text-decoration: none; /* Remove default text underline */
+	font-size: 18px; /* Increase the font-size */
+}
+
+#list_wrapper{
+	display: inline-block;
+	width: 25%;
 }
