@@ -5,7 +5,7 @@
 
 All in all, Pizza Cluster provides unique personalization settings that make ordering pizza lightning-fast for those who know exactly what they want and provides vast amount of options for the pizza lovers out there who want to explore new stuff.
   
-##### Further Analysis:  
+##### Conceptual implementation:  
 &ensp;&ensp;Ordering pizza online using Pizza Cluster would certainly improve the overall experience of the customer as customer would have more time to consider different options and user-friendly interface would help the user to see the end product before finalizing it. The main features of the web application would be following:  
 
 * User information:  
