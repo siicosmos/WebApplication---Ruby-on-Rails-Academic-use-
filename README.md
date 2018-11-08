@@ -1,7 +1,7 @@
 <h1 align="center">CMPT 276 Project Proposal</h1>
   
 ##### Project Overview:  
-&ensp;&ensp;Pizza Cluster is a pizza-ordering website. Pizzas are from many restaurants. Once users create an account, they can edit their information, personalize their preferences, bookmark their favourite restaurants and save their previous orders and reorder with just one click! If the users are not sure about what they want, they can browse through the menu and use special filters (e.g. price, distance, rating...) to find the best fitting restaurant for them. Additionally, the users get exclusive limited offers specifically based on their preferences and order history. Last but not least, users can track their order live through the order tracker.  
+&ensp;&ensp;Pizza Cluster is a pizza-ordering website. A registered user can edit information, personalize preference, bookmarking and reorder from saved previous orders with one click. If the users are not sure about what they want, they can browse through the menu and use special filters (e.g. price, distance, rating...) to find the best fitting restaurant for them. Additionally, the users get exclusive limited offers specifically based on their preferences and order history. Users can also track orders through order tracker.
 
 All in all, Pizza Cluster provides unique personalization settings that make ordering pizza lightning-fast for those who know exactly what they want and provides vast amount of options for the pizza lovers out there who want to explore new stuff.
   
